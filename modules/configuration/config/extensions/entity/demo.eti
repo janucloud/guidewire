@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<entity
+  xmlns="http://guidewire.com/datamodel"
+  entity="demo"
+  table="demo"
+  type="retireable"></entity>
