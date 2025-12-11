@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<entity
+  xmlns="http://guidewire.com/datamodel"
+  entity="sample"
+  desc="for testing "
+  table="sample"
+  type="versionable"></entity>
