@@ -4,4 +4,13 @@
   entity="sample"
   desc="for testing "
   table="sample"
-  type="versionable"></entity>
+  type="versionable">
+  <column
+    name="data"
+    nullok="true"
+    type="varchar">
+    <columnParam
+      name="size"
+      value="20"/>
+  </column>
+</entity>
