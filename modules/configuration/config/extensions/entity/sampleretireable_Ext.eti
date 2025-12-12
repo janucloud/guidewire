@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<entity
+  xmlns="http://guidewire.com/datamodel"
+  entity="sampleretireable_Ext"
+  table="sampleretireable_ext"
+  type="retireable">
+  <column
+    name="Ret"
+    nullok="true"
+    type="varchar">
+    <columnParam
+      name="size"
+      value="20"/>
+  </column>
+  <column
+    name="info"
+    nullok="true"
+    type="varchar">
+    <columnParam
+      name="size"
+      value="45"/>
+  </column>
+</entity>
