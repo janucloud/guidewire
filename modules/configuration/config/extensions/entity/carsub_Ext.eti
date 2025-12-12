@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<subtype
+  xmlns="http://guidewire.com/datamodel"
+  entity="carsub_Ext"
+  desc="child1"
+  supertype="vehicle_Ext">
+  <column
+    name="noofdoors"
+    nullok="true"
+    type="integer"></column>
+  <column
+    name="hassunroof"
+    nullok="true"
+    type="bit"></column>
+</subtype>

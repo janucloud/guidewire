@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<subtype
+  xmlns="http://guidewire.com/datamodel"
+  entity="bikesub_Ext"
+  desc="child2"
+  supertype="vehicle_Ext">
+  <column
+    name="engineCapacity"
+    nullok="true"
+    type="integer"/>
+</subtype>
