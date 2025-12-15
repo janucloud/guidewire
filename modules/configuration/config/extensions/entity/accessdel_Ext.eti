@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<entity
+  xmlns="http://guidewire.com/datamodel"
+  entity="accessdel_Ext"
+  desc="ENTITY USING DELEGATE"
+  table="accessdel_ext"
+  type="retireable">
+  <column
+    name="lossdate"
+    nullok="true"
+    type="integer"/>
+  <implementsEntity
+    name="contactDelegate_Ext"/>
+</entity>
