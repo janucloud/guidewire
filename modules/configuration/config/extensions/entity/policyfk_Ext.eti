@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<entity
+  xmlns="http://guidewire.com/datamodel"
+  entity="policyfk_Ext"
+  desc="Foreign key"
+  table="policyfk_ext"
+  type="retireable"
+  extendable="false"
+  exportable="true"
+  final="false">
+  <column
+    name="PolicyNumber"
+    nullok="true"
+    type="varchar">
+    <columnParam
+      name="size"
+      value="40"/>
+  </column>
+  <foreignkey
+    fkentity="accountfk_Ext"
+    name="account"
+    nullok="false"/>
+</entity>
