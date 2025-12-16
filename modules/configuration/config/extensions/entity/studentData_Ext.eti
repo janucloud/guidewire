@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<entity
+  xmlns="http://guidewire.com/datamodel"
+  entity="studentData_Ext"
+  desc="for pcf demo purpose"
+  table="studentdata_ext"
+  type="retireable"
+  final="false">
+  <column
+    name="FisrtName"
+    nullok="true"
+    type="shorttext"></column>
+  <column
+    name="LastName"
+    nullok="true"
+    type="shorttext"></column>
+  <column
+    name="DOB"
+    nullok="true"
+    type="varchar">
+    <columnParam
+      name="size"
+      value="10"/>
+  </column>
+</entity>
