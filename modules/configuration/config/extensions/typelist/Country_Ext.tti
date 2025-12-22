@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<typelist xmlns="http://guidewire.com/typelists" name="Country_Ext" desc="student country typelist">
+  <typecode
+    code="INDIA"
+    name="India"/>
+  <typecode
+    code="CHINA"
+    name="China"/>
+  <typecode
+    code="USA"
+    name="Usa"/>
+</typelist>
