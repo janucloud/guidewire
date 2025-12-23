@@ -22,4 +22,21 @@
       name="size"
       value="10"/>
   </column>
+  <typekey
+    name="Country"
+    nullok="true"
+    typelist="Country_Ext"/>
+  <typekey
+    name="Statelist"
+    nullok="true"
+    typelist="State_Ext">
+    <keyfilters>
+      <keyfilter
+        name="Country"/>
+    </keyfilters>
+  </typekey>
+  <array
+    arrayentity="subject_Ext"
+    desc="choices of subject"
+    name="Subject"/>
 </entity>

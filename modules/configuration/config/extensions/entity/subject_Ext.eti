@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<entity
+  final="false"
+  xmlns="http://guidewire.com/datamodel"
+  entity="subject_Ext"
+  desc="Subjects"
+  table="subject_ext"
+  type="retireable">
+  <column
+    name="InterestedSubject"
+    nullok="true"
+    type="shorttext"/>
+  <column
+    name="UninterestedSubject"
+    nullok="true"
+    type="shorttext"/>
+  <foreignkey
+    fkentity="studentData_Ext"
+    name="subjectfk"
+    nullok="true"/>
+</entity>
