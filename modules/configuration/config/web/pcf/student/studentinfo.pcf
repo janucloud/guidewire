@@ -16,6 +16,10 @@
         <EditButtons/>
         <IteratorButtons
           iterator="choiceofsubject"/>
+        <ToolbarButton
+          action="studentpopupactionPopup.push()"
+          id="studentdata"
+          label="&quot;standaloneLV&quot;"/>
       </Toolbar>
       <DetailViewPanel
         editable="true">
