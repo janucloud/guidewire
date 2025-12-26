@@ -6,6 +6,7 @@
     canEdit="true"
     id="studentinfo"
     title="&quot;Student Details&quot;">
+    
     <Variable
       initialValue="new studentData_Ext()"
       name="st"
@@ -17,7 +18,7 @@
         <IteratorButtons
           iterator="choiceofsubject"/>
         <ToolbarButton
-          action="studentpopupactionPopup.push()"
+          action="studentReusablePage.go()//studentpopupactionPopup.push()"
           id="studentdata"
           label="&quot;standaloneLV&quot;"/>
       </Toolbar>
@@ -44,13 +45,19 @@
             id="StudentCountry"
             label="&quot;Country&quot;"
             value="st.Country"
-            valueType="typekey.Country_Ext"/>
+            valueType="typekey.Country_Ext">
+            <PostOnChange/>
+          </TypeKeyInput>
           <TypeKeyInput
             editable="true"
             id="StudentState"
             label="&quot;State&quot;"
             value="st.Statelist"
             valueType="typekey.State_Ext"/>
+          <InputSetRef
+            def="IdentityInputSet()"
+            mode="mode()"
+            __disabled="true"/>
         </InputColumn>
       </DetailViewPanel>
       <ListViewPanel>
@@ -77,5 +84,13 @@
         </RowIterator>
       </ListViewPanel>
     </Screen>
+    <Code>function mode() : String {
+  if(st.Country == Country_Ext.TC_INDIA)
+    return "India"
+  else if(st.Country == Country_Ext.TC_USA)
+    return "USA"
+  else
+    return "China"
+}</Code>
   </Page>
 </PCF>
