@@ -56,7 +56,7 @@
             valueType="typekey.State_Ext"/>
           <InputSetRef
             def="IdentityInputSet()"
-            mode="mode()"
+            mode="moderesult()"
             __disabled="true"/>
         </InputColumn>
       </DetailViewPanel>
@@ -84,7 +84,7 @@
         </RowIterator>
       </ListViewPanel>
     </Screen>
-    <Code>function mode() : String {
+    <Code>function moderesult() : String {
   if(st.Country == Country_Ext.TC_INDIA)
     return "India"
   else if(st.Country == Country_Ext.TC_USA)
