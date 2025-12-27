@@ -11,6 +11,9 @@
       initialValue="new studentData_Ext()"
       name="st"
       type="entity.studentData_Ext"/>
+    <Variable
+      name="stud"
+      type="entity.studentData_Ext"/>
     <Screen
       editable="true">
       <Toolbar>
@@ -21,6 +24,10 @@
           action="studentReusablePage.go()//studentpopupactionPopup.push()"
           id="studentdata"
           label="&quot;standaloneLV&quot;"/>
+        <ToolbarButton
+          id="Search"
+          label="&quot;StudentSearch&quot;"
+          __disabled="true"/>
       </Toolbar>
       <DetailViewPanel
         editable="true">
@@ -55,9 +62,8 @@
             value="st.Statelist"
             valueType="typekey.State_Ext"/>
           <InputSetRef
-            def="IdentityInputSet()"
-            mode="moderesult()"
-            __disabled="true"/>
+            def="IdentityInputSet(stud)"
+            mode="moderesult()"/>
         </InputColumn>
       </DetailViewPanel>
       <ListViewPanel>
@@ -89,8 +95,10 @@
     return "India"
   else if(st.Country == Country_Ext.TC_USA)
     return "USA"
-  else
+  else if(st.Country == Country_Ext.TC_CHINA)
     return "China"
+  else
+    return null
 }</Code>
   </Page>
 </PCF>

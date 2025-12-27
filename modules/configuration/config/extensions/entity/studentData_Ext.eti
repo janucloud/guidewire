@@ -39,4 +39,21 @@
     arrayentity="subject_Ext"
     desc="choices of subject"
     name="Subject"/>
+  <column
+    name="AadharNumber"
+    nullok="true"
+    type="integer"/>
+  <column
+    name="PanNumber"
+    nullok="true"
+    type="shorttext"/>
+  <column
+    desc="(Social Security Number)"
+    name="SSN"
+    nullok="true"
+    type="integer"/>
+  <column
+    name="ResidentIdentityNumber"
+    nullok="true"
+    type="integer"></column>
 </entity>

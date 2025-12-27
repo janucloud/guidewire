@@ -5,11 +5,14 @@
   <InputSet
     id="IdentityInputSet"
     mode="USA">
+    <Require
+      name="stud"
+      type="entity.studentData_Ext"/>
     <TextInput
       editable="true"
       id="SSN"
       label="&quot;SSN Number&quot;"
-      value="st.SSN"
-      __disabled="true"/>
+      value="stud.SSN"
+      valueType="java.lang.Integer"/>
   </InputSet>
 </PCF>
