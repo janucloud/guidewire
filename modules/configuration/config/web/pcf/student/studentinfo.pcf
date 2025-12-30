@@ -25,9 +25,9 @@
           id="studentdata"
           label="&quot;standaloneLV&quot;"/>
         <ToolbarButton
+          action="studentSearchPopup.push()"
           id="Search"
-          label="&quot;StudentSearch&quot;"
-          __disabled="true"/>
+          label="&quot;StudentSearch&quot;"/>
       </Toolbar>
       <DetailViewPanel
         editable="true">
