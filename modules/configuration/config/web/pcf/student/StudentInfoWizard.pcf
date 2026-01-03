@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<PCF
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../../pcf.xsd">
+  <Wizard
+    id="StudentInfoWizard">
+    <Variable
+      initialValue="new studentData_Ext()"
+      name="stw"
+      type="entity.studentData_Ext"/>
+    <WizardStep
+      id="StudentBasicInfo"
+      screen="StudentInfo_BasicInfoStepScreen(stw)"
+      title="&quot;Student Basic Info&quot;"/>
+    <WizardStep
+      id="ContactInfo"
+      screen="StudentInfo_ContactStepScreen(stw)"
+      title="&quot;Student Contact Info&quot;"/>
+    <WizardStep
+      id="Summary"
+      screen="StudentInfo_SummaryStepScreen(stw)"
+      title="&quot;Summary&quot;"/>
+  </Wizard>
+</PCF>

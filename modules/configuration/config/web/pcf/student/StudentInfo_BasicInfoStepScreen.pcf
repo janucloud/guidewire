@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<PCF
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../../pcf.xsd">
+  <Screen
+    id="StudentInfo_BasicInfoStepScreen">
+    <Require
+      name="stw"
+      type="entity.studentData_Ext"/>
+    <Toolbar>
+      <WizardButtons/>
+    </Toolbar>
+    <DetailViewPanel>
+      <InputColumn>
+        <TextInput
+          editable="true"
+          id="studentName1"
+          label="&quot;FirstName&quot;"
+          required="true"
+          value="stw.FisrtName"/>
+        <TextInput
+          editable="true"
+          id="studentName2"
+          label="&quot;LastName&quot;"
+          required="true"
+          value="stw.LastName"/>
+      </InputColumn>
+    </DetailViewPanel>
+  </Screen>
+</PCF>

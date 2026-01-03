@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<PCF
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../../pcf.xsd">
+  <Screen
+    id="StudentInfo_ContactStepScreen">
+    <Require
+      name="stw2"
+      type="entity.studentData_Ext"/>
+    <Toolbar>
+      <WizardButtons/>
+    </Toolbar>
+    <DetailViewPanel>
+      <InputColumn>
+        <TextInput
+          editable="true"
+          id="ContactNumber"
+          label="&quot;Contact Number&quot;"
+          required="true"
+          value="stw2.ContactNumber"
+          valueType="java.lang.Integer"/>
+        <TextInput
+          editable="true"
+          id="EmailID"
+          label="&quot;Email_ID&quot;"
+          value="stw2.Email_ID"/>
+      </InputColumn>
+    </DetailViewPanel>
+  </Screen>
+</PCF>

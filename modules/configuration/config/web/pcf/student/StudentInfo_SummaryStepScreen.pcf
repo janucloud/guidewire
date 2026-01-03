@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<PCF
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../../pcf.xsd">
+  <Screen
+    id="StudentInfo_SummaryStepScreen">
+    <DetailViewPanel>
+      <InputColumn>
+        <TextInput
+          id="FirstNameSummary"
+          label="&quot;First Name&quot;"
+          value="pcf.api.Wizard.FisrtName"
+          __disabled="true"/>
+      </InputColumn>
+    </DetailViewPanel>
+  </Screen>
+</PCF>
