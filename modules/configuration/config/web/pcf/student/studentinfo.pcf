@@ -11,9 +11,6 @@
       initialValue="new studentData_Ext()"
       name="st"
       type="entity.studentData_Ext"/>
-    <Variable
-      name="stud"
-      type="entity.studentData_Ext"/>
     <Screen
       editable="true">
       <Toolbar>
@@ -28,6 +25,10 @@
           action="studentSearchPopup.push()"
           id="Search"
           label="&quot;StudentSearch&quot;"/>
+        <ToolbarButton
+          action="studentCardviewPopup.push()"
+          id="cardview"
+          label="&quot;cardview&quot;"/>
       </Toolbar>
       <DetailViewPanel
         editable="true">
@@ -62,7 +63,7 @@
             value="st.Statelist"
             valueType="typekey.State_Ext"/>
           <InputSetRef
-            def="IdentityInputSet(stud)"
+            def="IdentityInputSet(st)"
             mode="moderesult()"/>
         </InputColumn>
       </DetailViewPanel>

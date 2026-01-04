@@ -6,18 +6,18 @@
     id="IdentityInputSet"
     mode="India">
     <Require
-      name="stud"
+      name="st"
       type="entity.studentData_Ext"/>
     <TextInput
       editable="true"
       id="PAN"
       label="&quot;Pan Number&quot;"
-      value="stud.PanNumber"/>
+      value="st.PanNumber"/>
     <TextInput
       editable="true"
       id="Aadhar"
       label="&quot;Aadhar Number&quot;"
-      value="stud.AadharNumber"
+      value="st.AadharNumber"
       valueType="java.lang.Integer"/>
   </InputSet>
 </PCF>

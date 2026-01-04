@@ -6,13 +6,13 @@
     id="IdentityInputSet"
     mode="China">
     <Require
-      name="stud"
+      name="st"
       type="entity.studentData_Ext"/>
     <TextInput
       editable="true"
       id="ResidentIdentityNumber"
       label="&quot;RIN&quot;"
-      value="stud.ResidentIdentityNumber"
+      value="st.ResidentIdentityNumber"
       valueType="java.lang.Integer"/>
   </InputSet>
 </PCF>
