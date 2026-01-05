@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<PCF
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../../pcf.xsd">
+  <Popup
+    id="studentCardviewPopup"
+    title="&quot;popup for Cardview&quot;">
+    <Screen>
+      <PanelRef
+        def="studentListDetailView()"/>
+    </Screen>
+  </Popup>
+</PCF>

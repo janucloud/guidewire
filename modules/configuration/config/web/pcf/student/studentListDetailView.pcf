@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<PCF
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../../pcf.xsd">
+  <ListDetailPanel
+    id="studentListDetailView"
+    selectionName="studldv"
+    selectionType="entity.studentData_Ext">
+    <ListViewPanel>
+      <RowIterator
+        editable="false"
+        elementName="stlistdetailview"
+        value="gw.api.database.Query.make(studentData_Ext).select()"
+        valueType="gw.api.database.IQueryBeanResult&lt;entity.studentData_Ext&gt;">
+        <Row>
+          <TextCell
+            id="Name1"
+            label="&quot;First Name&quot;"
+            value="stlistdetailview.FisrtName"/>
+          <TextCell
+            id="Name2"
+            label="&quot;Last Name&quot;"
+            value="stlistdetailview.LastName"/>
+          <TextCell
+            id="Identity"
+            label="&quot;Adhar Number&quot;"
+            value="stlistdetailview.AadharNumber"
+            valueType="java.lang.Integer"/>
+        </Row>
+      </RowIterator>
+    </ListViewPanel>
+    <CardViewPanel>
+      <Card
+        id="studentBasicDetailsDisplay"
+        title="&quot;studentBasicDetails&quot;">
+        <DetailViewPanel>
+          <InputColumn>
+            <TextInput
+              id="Name1"
+              label="&quot;First Name&quot;"
+              value="studldv.FisrtName"/>
+            <TextInput
+              id="Name2"
+              label="&quot;Last Name&quot;"
+              value="studldv.LastName"/>
+          </InputColumn>
+        </DetailViewPanel>
+      </Card>
+      <Card
+        id="studentContactInfoDisplay"
+        title="&quot;StudentContactInfo&quot;">
+        <DetailViewPanel>
+          <InputColumn>
+            <TextInput
+              id="Aadhar"
+              label="&quot;Aadhar Number&quot;"
+              value="studldv.AadharNumber"
+              valueType="java.lang.Integer"/>
+            <TextInput
+              id="Phone"
+              label="&quot;Contact Number&quot;"
+              value="studldv.ContactNumber"
+              valueType="java.lang.Integer"/>
+          </InputColumn>
+        </DetailViewPanel>
+      </Card>
+    </CardViewPanel>
+  </ListDetailPanel>
+</PCF>

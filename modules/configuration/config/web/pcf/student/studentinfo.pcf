@@ -27,8 +27,8 @@
           label="&quot;StudentSearch&quot;"/>
         <ToolbarButton
           action="studentCardviewPopup.push()"
-          id="cardview"
-          label="&quot;cardview&quot;"/>
+          id="ldv"
+          label="&quot;ListDetailView&quot;"/>
       </Toolbar>
       <DetailViewPanel
         editable="true">
