@@ -6,7 +6,11 @@
     canEdit="true"
     id="studentinfo"
     title="&quot;Student Details&quot;">
-    
+
+    <LocationEntryPoint 
+      signature="studentinfo()  "/>  <!-- Entry point used to open Student page without any data (Create mode) -->
+    <LocationEntryPoint
+      signature="studentinfo(st:studentData_Ext)"/>   <!-- Entry point used to open Student page with existing student data (Edit mode) -->
     <Variable
       initialValue="new studentData_Ext()"
       name="st"

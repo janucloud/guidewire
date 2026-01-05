@@ -32,6 +32,13 @@
           label="&quot;State&quot;"
           value="s.Statelist"
           valueType="typekey.State_Ext"/>
+        <LinkCell
+          label="&quot;link EntryPoint&quot;">
+          <Link
+            action="studentinfo.go(s)"
+            id="studLink"
+            label="&quot;LinkName&quot;"/>
+        </LinkCell>
       </Row>
     </RowIterator>
   </ListViewPanel>
