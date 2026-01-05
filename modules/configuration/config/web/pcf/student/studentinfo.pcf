@@ -33,6 +33,10 @@
           action="studentCardviewPopup.push()"
           id="ldv"
           label="&quot;ListDetailView&quot;"/>
+        <ToolbarButton
+          action="studentdemo.push()"
+          id="Exitpoint"
+          label="&quot;Exit Point&quot;"/>
       </Toolbar>
       <DetailViewPanel
         editable="true">
