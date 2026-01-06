@@ -56,4 +56,24 @@
     name="ResidentIdentityNumber"
     nullok="true"
     type="integer"></column>
+  <column
+    name="ContactNumber"
+    nullok="true"
+    type="integer"/>
+  <column
+    name="Email_ID"
+    nullok="true"
+    type="shorttext"/>
+  <column
+    name="Age"
+    nullok="true"
+    type="integer"></column>
+  <column
+    name="Address"
+    nullok="true"
+    type="varchar">
+    <columnParam
+      name="size"
+      value="65"/>
+  </column>
 </entity>

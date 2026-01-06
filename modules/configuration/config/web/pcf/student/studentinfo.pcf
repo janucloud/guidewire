@@ -7,8 +7,8 @@
     id="studentinfo"
     title="&quot;Student Details&quot;">
 
-    <LocationEntryPoint 
-      signature="studentinfo()  "/>  <!-- Entry point used to open Student page without any data (Create mode) -->
+    <LocationEntryPoint
+      signature="studentinfo()"/>  <!-- Entry point used to open Student page without any data (Create mode) -->
     <LocationEntryPoint
       signature="studentinfo(st:studentData_Ext)"/>   <!-- Entry point used to open Student page with existing student data (Edit mode) -->
     <Variable
@@ -37,6 +37,11 @@
           action="studentdemo.push()"
           id="Exitpoint"
           label="&quot;Exit Point&quot;"/>
+        <ToolbarButton
+          action="studSameScreenWorksheet.goInWorkspace()"
+          id="worksheet"
+          label="&quot;WorkSheetDemo&quot;"
+          __disabled="true"/>
       </Toolbar>
       <DetailViewPanel
         editable="true">
@@ -56,6 +61,15 @@
             id="dateofbirth"
             label="&quot;DOB&quot;"
             value="st.DOB"/>
+          <TextInput
+            editable="true"
+            id="Age"
+            label="&quot;Age&quot;"
+            value="st.Age"
+            valueType="java.lang.Integer">
+            <PostOnChange
+              onChange="gw.practice.scriptparameterdemo_ExtENH.findAddress(st)"/>
+          </TextInput>
           <TypeKeyInput
             editable="true"
             id="StudentCountry"
@@ -70,6 +84,11 @@
             label="&quot;State&quot;"
             value="st.Statelist"
             valueType="typekey.State_Ext"/>
+          <TextInput
+            editable="true"
+            id="address"
+            label="&quot;Address&quot;"
+            value="st.Address"/>
           <InputSetRef
             def="IdentityInputSet(st)"
             mode="moderesult()"/>
@@ -99,7 +118,7 @@
         </RowIterator>
       </ListViewPanel>
     </Screen>
-    <Code>function moderesult() : String {
+    <Code><![CDATA[function moderesult() : String {
   if(st.Country == Country_Ext.TC_INDIA)
     return "India"
   else if(st.Country == Country_Ext.TC_USA)
@@ -108,6 +127,9 @@
     return "China"
   else
     return null
-}</Code>
+}
+
+
+]]></Code>
   </Page>
 </PCF>
