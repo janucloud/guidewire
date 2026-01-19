@@ -1,0 +1,21 @@
+package rules.Preupdate.ClaimPreupdate_dir //Package declaration
+
+@gw.rules.RuleName("CPU50000 - ContactUpdate")
+internal class CPU50000ContactUpdate {
+  static function doCondition(claim : entity.Claim) : boolean {
+/*start00rule*/
+return claim.Contacts.where(\elt -> elt.Contact.isFieldChanged(Person#DateOfBirth)).HasElements
+/*end00rule*/
+}
+
+  static function doAction(claim : entity.Claim, actions : gw.rules.Action) {
+/*start00rule*/
+ claim.createCustomHistoryEvent(CustomHistoryType.TC_CONTACT_UPDATE, "Contact detail is updated")
+     //entity.Claim : The definition of a Claim (the table / entity type)
+    //claim : entity.Claim :  One actual claim instance (like Claim #CLM12345)
+    //doCondition(currentClaim)
+    //doAction(currentClaim, actions)
+
+/*end00rule*/
+  }
+}
