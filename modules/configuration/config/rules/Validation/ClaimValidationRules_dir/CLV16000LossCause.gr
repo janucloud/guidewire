@@ -1,0 +1,16 @@
+package rules.Validation.ClaimValidationRules_dir
+
+@gw.rules.RuleName("CLV16000 - LossCause")
+internal class CLV16000LossCause {
+  static function doCondition(claim : entity.Claim) : boolean {
+/*start00rule*/
+return claim.LossCause == LossCause.TC_FIRE
+/*end00rule*/
+}
+
+  static function doAction(claim : entity.Claim, actions : gw.rules.Action) {
+/*start00rule*/
+  claim.reject(null,null,ValidationLevel.TC_NEWLOSS, "Loss cause is Fire")
+/*end00rule*/
+  }
+}
