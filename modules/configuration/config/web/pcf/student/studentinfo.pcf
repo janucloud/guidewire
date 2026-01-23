@@ -68,7 +68,7 @@
             value="st.Age"
             valueType="java.lang.Integer">
             <PostOnChange
-              onChange="gw.practice.scriptparameterdemo_ExtENH.findAddress(st)"/>
+              onChange="gw.demo.scriptparameterdemo_ExtENH.findAddress(st)"/>
           </TextInput>
           <TypeKeyInput
             editable="true"
@@ -101,7 +101,7 @@
           id="choiceofsubject"
           toAdd="st.addToSubject(subj)"
           toRemove="st.removeFromSubject(subj)"
-          value="st.Subject"
+          value="st.subject"
           valueType="entity.subject_Ext[]">
           <Row>
             <TextCell

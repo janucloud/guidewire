@@ -38,7 +38,7 @@
   <array
     arrayentity="subject_Ext"
     desc="choices of subject"
-    name="Subject"/>
+    name="subject"/>
   <column
     name="AadharNumber"
     nullok="true"
